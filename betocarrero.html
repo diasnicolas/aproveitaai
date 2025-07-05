@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R92FRRTPXS"></script>
+er.com/gtag/js?id=G-R92FRRTPXS"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -20,17 +19,40 @@
 <!-- Meta Robots -->
 <meta name="robots" content="index, follow" />
   <title>Pacotes Férias em Penha/SC | Aproveita Aí - Viagens & Turismo</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #ffffff;
-      margin: 0;
-      padding: 0;
-      color: #212121;
-      line-height: 1.6;
-    }
-
-    header {
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#03c97a',
+                        'primary-dark': '#02a868',
+                        'primary-light': '#e6f9f1',
+                        'accent': '#FF6B35',
+                        'accent-dark': '#E85A2A',
+                        'urgency': '#3B82F6',
+                        'urgency-dark': '#2563EB',
+                        'google-blue': '#4285F4',
+                        'google-red': '#EA4335',
+                        'google-yellow': '#FBBC05',
+                        'google-green': '#34A853',
+                        'facebook': '#1877F2',
+                        'instagram': '#E4405F',
+                        'whatsapp': '#25D366'
+                    }
+                }
+            }
+        }
+    
+    </script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+		header {
   background: url('beto_carrero.webp') center/cover no-repeat;
   color: #ffffff;
   padding: 2rem 1rem 1.5rem 1rem;
@@ -42,7 +64,7 @@ header::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* sobreposição escura */
+  background: rgba(0, 0, 0, 0.7); /* sobreposição escura */
   z-index: 0;
 }
 
@@ -51,262 +73,272 @@ header * {
   z-index: 1;
 }
 
-    .logo {
+
+
+.logo {
       max-width: 200px;
       margin-bottom: 1rem;
+	  margin-top: 1rem;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    .btn-top {
-  background: #03c97a;
-  color: #212121;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 1rem;
-  font-size: 1.2rem;
-  margin: -1rem auto 1rem auto;
-  border-radius: 8px;
-  width: fit-content;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  border: 2px solid #ffffff;
-  transition: all 0.2s ease-in-out;
-}
-
-.btn-top:hover {
-  background: #029f62;
-  color: #ffffff;
-  border-color: #ffffff;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-}
-
-    main {
-      padding: 2rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .btn-whatsapp {
-  display: inline-block;
-  background: #03c97a;
-  color: white;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-  border-radius: 8px;
-  margin: 2rem 0;
-  animation: pulseBlink 1.2s infinite;
-  box-shadow: 0 0 10px #03c97a;
-  transition: transform 0.2s ease-in-out;
-}
-
-    .benefits ul {
-      padding-left: 1.2rem;
-    }
-
-    .highlight {
-      background: #f1f1f1;
-      padding: 1rem;
-      border-left: 5px solid #03c97a;
-      margin-top: 2rem;
-    }
-
-    footer {
-  background-color: #212121;
-  color: #ffffff;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-.footer-container h2 {
-  color: #03c97a;
-  margin-bottom: 0.5rem;
-}
-
-.footer-container p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-}
-
-.footer-container small {
-  color: #bbbbbb;
-  font-size: 0.9rem;
-}
-
-.btn-top-floating {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: #ffffff;
-  color: #03c97a;
-  font-weight: bold;
-  padding: 0.8rem 1.2rem;
-  border-radius: 6px;
-  text-decoration: none;
-  z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  transition: background 0.2s ease-in-out;
-}
-
-.btn-top-floating:hover {
-  background: #f1f1f1;
-}
-
-.promo-banner {
-  background-color: #03c97a;
-  color: #212121;
-  text-align: center;
-  padding: 0.8rem 1rem;
-  font-weight: bold;
-  font-size: 1rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  position: relative;
-  z-index: 1001;
-}
-
-.top-bar {
-  color: #212121;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.6rem 1rem;
-  font-size: 0.95rem;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
-  flex-wrap: wrap;
-}
-
-.top-bar-left a {
-  text-decoration: none;
-  color: #212121;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-weight: 500;
-}
-
-.instagram-icon {
-  width: 18px;
-  height: 18px;
-  filter: invert(16%) sepia(89%) saturate(620%) hue-rotate(295deg) brightness(95%) contrast(94%);
-}
-
-.btn-top-whatsapp {
-  background-color: #03c97a;
-  color: #ffffff;
-  padding: 0.7rem 1.4rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  white-space: nowrap;
-  font-size: 1.05rem;
-  animation: pulseBlink 1.2s infinite;
-  box-shadow: 0 0 10px #03c97a;
-  transition: transform 0.2s ease-in-out;
-}
-
-.btn-top-whatsapp:hover {
-  background-color: #029e5f;
-}
-
-    .urgente {
-      color: #d32f2f;
-      font-weight: bold;
-    }
-	
-	@keyframes pulseBlink {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-    box-shadow: 0 0 10px #03c97a;
-    background-color: #03c97a;
-  }
-  50% {
-    opacity: 0.8;
-    transform: scale(1.07);
-    box-shadow: 0 0 18px #02e48d;
-    background-color: #02e48d;
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-    box-shadow: 0 0 10px #03c97a;
-    background-color: #03c97a;
-  }
-}
-  </style>
+        
+        .benefit-card {
+            transition: all 0.3s ease;
+        }
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+        .countdown {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .whatsapp-btn {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .logo-shadow {
+            filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
+        }
+        .brinde-badge {
+            animation: tada 2s infinite;
+            transform-origin: center;
+        }
+        @keyframes tada {
+            0% { transform: scale(1); }
+            10%, 20% { transform: scale(0.9) rotate(-3deg); }
+            30%, 50%, 70%, 90% { transform: scale(1.1) rotate(3deg); }
+            40%, 60%, 80% { transform: scale(1.1) rotate(-3deg); }
+            100% { transform: scale(1) rotate(0); }
+        }
+        .urgency-text {
+            color: #3B82F6;
+        }
+        .urgency-border {
+            border: 2px solid #3B82F6;
+        }
+		 .google-logo {
+            display: flex;
+            align-items: center;
+        }
+        .google-logo span:nth-child(1) { color: #4285F4; }
+        .google-logo span:nth-child(2) { color: #EA4335; }
+        .google-logo span:nth-child(3) { color: #FBBC05; }
+        .google-logo span:nth-child(4) { color: #4285F4; }
+        .google-logo span:nth-child(5) { color: #34A853; }
+        .google-logo span:nth-child(6) { color: #EA4335; }
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+        .instagram-gradient {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+    </style>
 </head>
-<body>
-<div class="promo-banner">
-  🎁 Reserve seu pacote completo e ganhe um brinde exclusivo para curtir ainda mais Penha/SC! 😍
-</div>
+<body class="bg-green-50">
 
-<header>
-<div class="top-bar">
-  <!--<div class="top-bar-left">
-    <a href="https://www.instagram.com/aproveitaaiturismo" target="_blank">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/instagram.svg" alt="Instagram" class="instagram-icon" />
-      @aproveitaaiturismo
+    <!-- Hero Section with Logo -->
+    <header class="hero-bg text-white py-10 md:py-10">
+	 <div class="brinde-badge inline-block bg-accent px-1 py-1 rounded-lg mb-1 shadow-lg transform">
+                <div class="flex items-center">
+                    <span class="text-1xl mr-1">🎁</span>
+                    <span class="text-white font-extrabold text-xl md:text-1xl">BRINDE EXCLUSIVO!</span>
+                </div>
+            </div>
+        <div class="container mx-auto px-6 text-center">
+            <!-- Logo SVG (Circular) -->
+            <div class="flex justify-center mb-8">
+                <img src="logo.png" alt="Aproveita Aí Viagens e Turismo" class="logo">
+            </div>
+            
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">Pacotes Completos para <span class="text-amber-400">Penha/SC</span></h1>
+            <p class="text-xl md:text-1xl mb-8 max-w-2xl mx-auto font-extrabold">Aproveite as férias com sua família e ganhe um</p>
+            
+            <!-- Enhanced Brinde Exclusivo Badge -->
+           
+            
+            <div class="space-y-4 md:space-y-0 md:space-x-4">
+                <a href="#contato" class="bg-accent hover:bg-accent-dark text-white text-lg font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg inline-block">Quero saber mais!</a>
+                
+                <!-- Added "Reservar meu pacote" button to header -->
+                <a href="whatsapp-betocarrero.html" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 text-white text-lg font-bold py-3 px-8 rounded-full inline-flex items-center transition duration-300 shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                    </svg>
+                    Reservar AGORA
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Viva momentos inesquecíveis em Penha/SC</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Conheça as melhores atrações do litoral catarinense com tudo incluso: transporte, hospedagem e ingressos para o Beto Carrero World e parques incríveis.</p>
+            </div>
+
+            <!-- Benefits -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div class="benefit-card bg-primary-light rounded-xl p-6 shadow-md border-t-4 border-primary">
+                    <div class="text-4xl mb-4">🏨</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Hospedagem confortável</h3>
+                    <p class="text-gray-600">Acomodações selecionadas para o conforto de toda a família, com ótima localização.</p>
+                </div>
+                
+                <div class="benefit-card bg-primary-light rounded-xl p-6 shadow-md border-t-4 border-primary">
+                    <div class="text-4xl mb-4">✈️</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Passagens incluídas</h3>
+                    <p class="text-gray-600">Passagens aéreas ou rodoviárias conforme sua preferência e disponibilidade.</p>
+                </div>
+                
+                <div class="benefit-card bg-primary-light rounded-xl p-6 shadow-md border-t-4 border-primary">
+                    <div class="text-4xl mb-4">🎢</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Ingressos garantidos</h3>
+                    <p class="text-gray-600">Ingressos para o Beto Carrero World e outros parques incríveis da região.</p>
+                </div>
+                
+                <div class="benefit-card bg-primary-light rounded-xl p-6 shadow-md border-t-4 border-primary">
+                    <div class="text-4xl mb-4">🚐</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Transfer completo</h3>
+                    <p class="text-gray-600">Transporte do aeroporto/rodoviária até o hotel e para todas as atrações.</p>
+                </div>
+                
+                <div class="benefit-card bg-primary-light rounded-xl p-6 shadow-md border-t-4 border-primary">
+                    <div class="text-4xl mb-4">🧳</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Suporte durante a estadia</h3>
+                    <p class="text-gray-600">Equipe disponível para ajudar com qualquer necessidade durante toda a sua viagem.</p>
+                </div>
+                
+                <div class="benefit-card bg-amber-100 rounded-xl p-6 shadow-md border-t-4 border-amber-500">
+                    <div class="text-4xl mb-4">🎁</div>
+                    <h3 class="text-xl font-semibold text-amber-800 mb-2">Brinde exclusivo!</h3>
+                    <p class="text-gray-600">Ao reservar seu pacote completo, você ganha um brinde especial para curtir ainda mais sua viagem!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Section with White Background -->
+    <section class="bg-white py-12 border-t border-b border-gray-200">
+        <div class="container mx-auto px-6 text-center">
+            <div class="countdown mb-6">
+                <div class="text-3xl md:text-4xl font-bold mb-2 urgency-text">⏳ As férias de Julho já chegaram!</div>
+                <p class="text-xl text-gray-600">Não perca esta oportunidade.</p>
+            </div>
+            <div class="bg-red-600 inline-block py-3 px-6 rounded-lg text-lg font-bold mb-4 text-white">
+                ⚠️ Estamos com poucas vagas para grupos de 3 a 10 pessoas.
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contato" class="py-16 bg-primary-dark text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Chame agora no WhatsApp</h2>
+            <a href="whatsapp-betocarrero.html" target="_blank" class="whatsapp-btn bg-accent hover:bg-accent-dark text-white text-xl font-bold py-4 px-8 rounded-full inline-flex items-center transition duration-300 shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+                Reservar meu pacote
+            </a>
+            <p class="mt-6 text-green-50">Resposta rápida! Estamos prontos para melhor atendê-lo.</p>
+			<p class="mt-2 text-green-50">Orçamento grátis e sem burocracia.</p>
+        </div>
+    </section>
+	
+	<section id="conecte-se" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Conecte-se Conosco</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Acompanhe nossas redes sociais para ficar por dentro de promoções exclusivas e dicas de viagem!</p>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="flex justify-center items-center space-x-8 md:space-x-12">
+                <!-- Facebook Icon -->
+                <a href="https://www.facebook.com/864834323626481" target="_blank" class="social-icon group">
+                    <div class="w-16 h-16 md:w-20 md:h-20 bg-facebook rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-10 w-8 md:w-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-center mt-2 font-medium text-gray-700">Facebook</p>
+                </a>
+
+                <!-- Instagram Icon -->
+                <a href="https://instagram.com/aproveitaaiturismo" target="_blank" class="social-icon group">
+                    <div class="w-16 h-16 md:w-20 md:h-20 instagram-gradient rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-10 w-8 md:w-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-center mt-2 font-medium text-gray-700">Instagram</p>
+                </a>
+
+                <!-- WhatsApp Icon -->
+                <a href="whatsapp-betocarrero.html" target="_blank" class="social-icon group">
+                    <div class="w-16 h-16 md:w-20 md:h-20 bg-whatsapp rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-10 w-8 md:w-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-center mt-2 font-medium text-gray-700">WhatsApp</p>
+                </a>
+
+                <!-- Google Icon -->
+                <a href="https://g.co/kgs/rdzewBv" target="_blank" class="social-icon group">
+                    <div class="w-16 h-16 md:w-20 md:h-20 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
+                        <svg class="h-8 md:h-10 w-8 md:w-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.8055 10.0415H21V10H12V14H17.6515C16.827 16.3285 14.6115 18 12 18C8.6865 18 6 15.3135 6 12C6 8.6865 8.6865 6 12 6C13.5295 6 14.921 6.577 15.9805 7.5195L18.809 4.691C17.023 3.0265 14.634 2 12 2C6.4775 2 2 6.4775 2 12C2 17.5225 6.4775 22 12 22C17.5225 22 22 17.5225 22 12C22 11.3295 21.931 10.675 21.8055 10.0415Z" fill="#4285F4"></path>
+                            <path d="M3.15295 7.3455L6.43845 9.755C7.32745 7.554 9.48045 6 12 6C13.5295 6 14.921 6.577 15.9805 7.5195L18.809 4.691C17.023 3.0265 14.634 2 12 2C8.15895 2 4.82795 4.1685 3.15295 7.3455Z" fill="#EA4335"></path>
+                            <path d="M12 22C14.583 22 16.93 21.0115 18.7045 19.404L15.6095 16.785C14.5718 17.5742 13.3038 18.001 12 18C9.39903 18 7.19053 16.3415 6.35853 14.027L3.09753 16.5395C4.75253 19.778 8.11353 22 12 22Z" fill="#34A853"></path>
+                            <path d="M21.8055 10.0415H21V10H12V14H17.6515C17.2571 15.1082 16.5467 16.0766 15.608 16.7855L15.6095 16.7845L18.7045 19.4035C18.4855 19.6025 22 17 22 12C22 11.3295 21.931 10.675 21.8055 10.0415Z" fill="#4285F4"></path>
+                        </svg>
+                    </div>
+                    <p class="text-center mt-2 font-medium text-gray-700">Google</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-100 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2025 Aproveita.Aí - Viagens e Turismo - CNPJ: 45.204.416/0001-60</p>
+			<p>Todos os direitos reservados</p>
+            <p class="mt-2 text-sm text-gray-300">Pacotes sujeitos à disponibilidade. Consulte condições.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="whatsapp-betocarrero.html" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition duration-300 z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
     </a>
-  </div>-->
-  <div class="top-bar-right">
-    <a
-      href="whatsapp-betocarrero.html"
-      target="_blank"
-      class="btn-top-whatsapp"
-    >
-      📲 Chame agora no WhatsApp
-    </a>
-  </div>
-</div>
-  <img src="logo.png" alt="Aproveita Aí Viagens e Turismo" class="logo">
-  <h1>Pacotes Completos para Penha/SC</h1>
-  <p>Aproveite as férias com sua família e ganhe um brinde exclusivo!</p>
-</header>
 
-
-
-<main>
-  <h2>Viva momentos inesquecíveis em Penha/SC</h2>
-  <p>Conheça as melhores atrações do litoral catarinense com tudo incluso: transporte, hospedagem e ingressos para o Beto Carrero World e parques incríveis.</p>
-
-  <div class="benefits">
-    <h3>O que está incluso?</h3>
-    <ul>
-      <li>Hospedagem confortável para famílias</li>
-      <li>Passagens aéreas ou rodoviárias</li>
-      <li>Ingressos para o Beto Carrero e mais</li>
-      <li>Transfer e suporte durante a estadia</li>
-      <li><strong>Brinde exclusivo</strong> para pacotes completos!</li>
-    </ul>
-  </div>
-
-  <div class="highlight">
-    <p class="urgente">⏳ As férias de Julho já chegaram! Não perca esta oportunidade.</p>
-	<p class="urgente">⚠️ Estamos com poucas vagas para grupos de 3 a 10 pessoas.</p>
-  </div>
-
-  <a
-    href="whatsapp-betocarrero.html"
-    class="btn-whatsapp"
-    target="_blank"
-  >
-    Chame agora no WhatsApp 📲
-  </a>
-</main>
-
-<footer>
-  <div class="footer-container">
-    <h2>🎁 Brinde Exclusivo!</h2>
-    <p>Ao reservar seu pacote completo conosco, você ganha um brinde especial para curtir ainda mais sua viagem! 😍</p>
-    <small>&copy; 2025 Aproveita Aí - Viagens & Turismo. Todos os direitos reservados.</small>
-  </div>
-</footer>
-
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
