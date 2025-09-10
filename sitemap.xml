@@ -6,27 +6,18 @@
       <priority>1.0</priority>
    </url>
    <url>
-      <loc>https://www.aproveitaai.com.br/#sobre</loc>
-   </url>
-   <url>
-      <loc>https://www.aproveitaai.com.br/#servicos</loc>
-   </url>
-   <url>
-      <loc>https://www.aproveitaai.com.br/#diferenciais</loc>
-   </url>
-   <url>
-      <loc>https://www.aproveitaai.com.br/#destinos</loc>
-   </url>
-   <url>
-      <loc>https://www.aproveitaai.com.br/#contato</loc>
-   </url>
-   <url>
-      <loc>https://www.aproveitaai.br/whatsapp.html</loc>
-   </url>
-   <url>
-      <loc>https://www.aproveitaai.br/ofertas-exclusivas.html</loc>
-   </url>
-   <url>
-      <loc>https://www.aproveitaai.br/betocarrero.html</loc>
-   </url>
+	   <loc>https://www.aproveitaai.com.br/whatsapp.html</loc>
+	   <changefreq>monthly</changefreq>
+	   <priority>0.8</priority>
+	</url>
+	<url>
+	   <loc>https://www.aproveitaai.com.br/ofertas-exclusivas.html</loc>
+	   <changefreq>weekly</changefreq>
+	   <priority>0.9</priority>
+	</url>
+	<url>
+	   <loc>https://www.aproveitaai.com.br/betocarrero.html</loc>
+	   <changefreq>monthly</changefreq>
+	   <priority>0.7</priority>
+	</url>
 </urlset>
